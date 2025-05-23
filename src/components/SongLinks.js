@@ -1,25 +1,25 @@
 const SongLinks = () => {
   const songs = [
     {
-      title: "Bésame Mucho",
-      url: "https://www.youtube.com/watch?v=1K6v4Pwq5Y0",
-      artist: "Andrea Bocelli"
+      title: "Angel",
+      url: "https://youtu.be/M1V5EIdAFNU?si=TZr1tlD-ENkY09-O",
+      artist: "Damiano David"
     },
     {
-      title: "Perfect",
-      url: "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
-      artist: "Ed Sheeran"
+      title: "Just the way you are",
+      url: "https://youtu.be/13jQjFQmTFw?si=YUWj-w0J29D0t8VZ",
+      artist: "Bruno Mars"
     },
     {
-      title: "La Vie en Rose",
-      url: "https://www.youtube.com/watch?v=ryF9vz8Jb7I",
-      artist: "Louis Armstrong"
+      title: "Amor Completo",
+      url: "https://youtu.be/bLojUhnV_RQ?si=_PvLUfk_d9w899Dj",
+      artist: "Mon Laferte"
     }
   ];
 
   return (
     <section className="bg-purple-50 py-8 px-4">
-      <h2 className="text-3xl font-semibold text-purple-900 mb-6 text-center">Canciones para enamorarse</h2>
+      <h2 className="text-3xl font-semibold text-purple-900 mb-6 text-center">Canciones para tí</h2>
       <div className="max-w-md mx-auto space-y-4">
         {songs.map((song, index) => (
           <a 
