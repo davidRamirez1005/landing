@@ -7,10 +7,10 @@ const CatGallery = () => {
   useEffect(() => {
     const fetchCats = async () => {
       try {
-        const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=4');
+        const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=2');
         const data = await response.json();
         setCatImages(data.map(cat => cat.url));
-      } catch (error) {
+      } catch (error) {A
         console.error("Error fetching cats:", error);
         // Imágenes de respaldo por si falla la API
         setCatImages([
@@ -29,7 +29,7 @@ const CatGallery = () => {
 
   return (
     <section className="py-8 px-4">
-      <h2 className="text-3xl font-semibold text-purple-900 mb-6 text-center">Nuestros amigos gatunos</h2>
+      <h2 className="text-3xl font-semibold text-purple-900 mb-6 text-center">Así de linda eres</h2>
       
       {loading ? (
         <div className="flex justify-center items-center h-48">
@@ -56,5 +56,3 @@ const CatGallery = () => {
 };
 
 export default CatGallery;
-
-// DONE
