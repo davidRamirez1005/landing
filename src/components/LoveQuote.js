@@ -1,9 +1,9 @@
 const LoveQuote = () => {
   const quotes = [
-    "Eres el sueño que nunca quise dejar de soñar",
-    "Contigo hasta el último latido",
-    "El amor no se cuenta, se siente... y contigo siento todo",
-    "Me gustas más que a los gatos las cajas de cartón"
+    "Eres el detalle inesperado que hace especial mi día",
+    "Hay personas que suman, pero tú multiplicas",
+    "Tu sonrisa tiene el poder de desordenar mis pensamientos",
+    "Me encantas como los gatos aman las cajas de cartón"
   ];
 
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
